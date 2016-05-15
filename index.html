@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Waiter</title>
+    <link href="styles/Waiter.css" rel="stylesheet">
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <script type="text/template" id='category'>
+             
+             <img class="img-rounded" src="<%=src%>" alt="Category">
+             <p class="category"><%=name%></p>
+    </script>
+
+    <script type="text/template" id='dishes'>
+        <p class="category"><%=name%></p>
+        <img class="img-rounded" src="<%=src%>" alt="Dishes">
+        <p><%=weight%></p>
+        <p><%=description%></p>
+        <p><%=price%></p>
+    </script>
+
+    <script type="text/template" id='order'>
+        <p><%=name%></p>
+        <p><%=weight%></p>
+        <p><%=description%></p>
+        <p><%=price%></p>
+        <input type="number">
+        <button class="btn btn-danger">x</button>
+    </script>
+
+    
+  <script src="libs/jquery.js"></script>
+    <script src="libs/underscore.js"></script>
+    <script src="libs/backbone.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/models/CategoryModel.js"></script>
+    <script src="scripts/collections/CategoryCollection.js"></script>
+    <script src="scripts/views/CategoryView.js"></script>
+    <script src="scripts/views/CategoriesView.js"></script>
+    <script src="scripts/models/DishesModel.js"></script>
+    <script src="scripts/collections/DishesCollection.js"></script>
+    <script src="scripts/views/DishesView.js"></script>
+    <script src="scripts/views/DishView.js"></script>
+    <script src="scripts/models/OrderModel.js"></script>
+    <script src="scripts/collections/OrderCollection.js"></script>
+    <script src="scripts/views/OrdersView.js"></script>
+    <script src="scripts/views/OrderView.js"></script>
+    <script src="scripts/routes/CategoriesRoute.js"></script>
+    <script src="scripts/run.js"></script>
+
+
+   
+</head>
+<body>
+<header></header>
+<main>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span3 " >
+                <ul class="order">
+                    <p>Наименование</p>
+                </ul>
+                <button class="btn btn-success">Save</button>
+                <button class="btn btn-danger">Delete</button>
+            </div>
+            <div class="span9 right">
+
+                <ul class ="row-fluid menu "></ul>
+
+            </div>
+        </div>
+
+    </div>
+</main>
+<footer></footer>
+
+</body>
+</html>
